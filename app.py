@@ -7,14 +7,14 @@ from flask import send_from_directory
 
 app = Flask(__name__)
 
-app.secret_key='borgesit'
+app.secret_key='YOUR_SECRET_KEY'
 
 mysql=MySQL()
 
-app.config['MYSQL_DATABASE_HOST'] = 'sql804.main-hosting.eu'
-app.config['MYSQL_DATABASE_USER'] = 'u833415228_ebooks'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Borges1234'
-app.config['MYSQL_DATABASE_DB'] = 'u833415228_crud'
+    app.config['MYSQL_DATABASE_HOST'] = 'YOUR_HOST_NAME'
+app.config['MYSQL_DATABASE_USER'] = 'YOUR_USER_NAME'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'YOUR_DATABASE_PASSWORD'
+app.config['MYSQL_DATABASE_DB'] = 'YUOR_DATABASE_NAME'
 mysql.init_app(app)
 
 
